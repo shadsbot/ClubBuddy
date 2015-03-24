@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+    android:id="@+id/cancer"
+    android:background="#ffffcb0f"
+    android:weightSum="1">
+
+    <Button
+
+        android:id="@+id/btn_contacts"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8px"
+
+        android:text="@string/Set_cnct"
+        android:background="@drawable/roundbutton" />
+
+    <TextView
+
+        android:id="@+id/txt_contacts_name"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="8px"
+
+        android:textSize="24sp" />
+
+    <TextView
+
+        android:id="@+id/txt_contacts_number"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_weight="0.00"
+
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.10"
+        android:textSize="24sp"
+        android:layout_gravity="right" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="77dp"
+        android:layout_weight="1.03">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:id="@+id/finished_importing"
+            android:background="@drawable/roundbutton" />
+    </LinearLayout>
+
+</LinearLayout>
