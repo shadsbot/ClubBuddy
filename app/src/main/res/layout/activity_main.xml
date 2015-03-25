@@ -43,4 +43,14 @@
         android:layout_alignParentStart="true"
         android:background="@drawable/roundbutton" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="areYouRegistered"
+        android:layout_marginTop="40dp" />
+
 </RelativeLayout>

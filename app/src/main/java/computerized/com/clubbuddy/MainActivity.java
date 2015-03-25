@@ -5,12 +5,14 @@ import android.bluetooth.BluetoothAdapter;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 
 import java.util.Locale;
@@ -23,6 +25,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //InternetStuff fetchContent = new InternetStuff();
+
     }
 
 
@@ -56,7 +59,7 @@ public class MainActivity extends ActionBarActivity {
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
             alert.setMessage("Your device does not support Bluetooth. We're sorry, but you can't use this feature without it.").setNegativeButton(":(", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int d) {
-                    // Yes
+                    // No
                     dialog.cancel();
                 }
             }).create().show();
@@ -77,6 +80,26 @@ public class MainActivity extends ActionBarActivity {
                         .create().show();
             }
         }
+    }
+
+    public void areYouRegistered(View view) {
+/*        Verify check = new Verify();
+        if (check.doesNumberExist() == true)
+        {
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.setMessage("It seems you're not registered with us! Would you like to register now?");
+            alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int d) {
+                    // No
+                    dialog.cancel();
+                }
+            });
+            // TODO: Implement the yes button REMOVE NETWORKING ON MAIN THREAD DO IT DO IT DO IT
+        }
+    */
+
+//        InternetStuff a = new InternetStuff();
+//        Toast.makeText(this, a.query("/check/5555555555"), Toast.LENGTH_LONG).show();
     }
 
     public void toSettingsPage(MenuItem item) {
